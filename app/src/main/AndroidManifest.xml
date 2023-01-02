@@ -13,16 +13,28 @@
         android:theme="@style/Theme.ReadingApp"
         tools:targetApi="31">
         <activity
-            android:name=".Notifications"
-            android:exported="false" />
+          android:name=".Favorites"
+          android:exported="false" />
         <activity
-            android:name=".Posts"
-            android:exported="false" />
+          android:name=".ProfileFragment"
+          android:exported="false" />
         <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
+          android:name=".HomeFragment"
+          android:exported="false" />
         <activity
-            android:name=".MainActivity"
+          android:name=".MessageFragment"
+          android:exported="false" />
+        <activity
+          android:name=".NotificationFragment"
+          android:exported="false" />
+      <activity
+          android:name=".MainActivity3"
+          android:exported="false" />
+        <activity
+          android:name=".MainActivity"
+          android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

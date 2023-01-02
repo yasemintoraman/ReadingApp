@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    tools:context=".LoginActivity"
     android:background="#8FD5B6">
 
     <LinearLayout
@@ -42,9 +43,9 @@
             android:src="@drawable/img_2" />
 
         <EditText
-            android:id="@+id/sign_up_email"
+            android:id="@+id/login_email"
             android:layout_width="350dp"
-            android:layout_height="65dp"
+            android:layout_height="60dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/text_bg"
             android:hint="Email Address"
@@ -53,7 +54,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/sign_up_password"
+            android:id="@+id/login_password"
             android:layout_width="350dp"
             android:layout_height="60dp"
             android:layout_marginTop="10dp"
@@ -69,9 +70,50 @@
             android:layout_height="60dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/button_bg"
-            android:onClick="signUp"
-            android:text="SIGN UP"
+            android:onClick="login"
+            android:text="LOGIN"
             android:textColor="#CAD3DA"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Forget Password"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_gravity="end"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/google_icon"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/facebook_icon"
+                android:layout_marginLeft="30dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="signUpScreen"
+            android:text="Don't have an account? Sign Up"
+            android:textColor="#fff"
+            android:textSize="16dp"
             android:textStyle="bold" />
 
     </LinearLayout>
